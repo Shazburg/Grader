@@ -17,5 +17,9 @@ class Test_grader < Test::Unit::TestCase
 		assert_kind_of Integer, foo
 	end
 
+	def test_special_ed_score
+		foo = @object.special_ed_score(78)
 
+		assert_not_nil foo
+	end
 end
