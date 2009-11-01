@@ -10,9 +10,10 @@ class Grader
 		@special_ed_score = 0
 	end
 
-	def get_total_questions
-		puts "What is the total number of questions?"
-		@total_questions = gets.to_i
+	def get_questions_total
+		puts "How many questions?"
+		questions_total = gets
+		return questions_total.to_i
 	end
 
 	def get_special_ed_score
